@@ -1,0 +1,8 @@
+{
+  "name": "Skaldveg Modular Dashboard (MVP-V1)",
+  "description": "A high-performance modular dashboard for music production, project management (ClickUp), creative endeavors, and health tracking with Gemini AI integration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
