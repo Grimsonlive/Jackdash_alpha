@@ -5,7 +5,9 @@ export enum WidgetType {
   CREATIVE = 'CREATIVE',
   HEALTH = 'HEALTH',
   KPI = 'KPI',
-  INTEGRATIONS = 'INTEGRATIONS'
+  INTEGRATIONS = 'INTEGRATIONS',
+  VISION = 'VISION',
+  LIVE = 'LIVE'
 }
 
 export enum ProjectStatus {
@@ -21,6 +23,8 @@ export interface MusicProject {
   album: string;
   status: ProjectStatus;
   progress: number;
+  producer?: string;
+  tags?: string[];
 }
 
 export interface ClickUpTask {
@@ -41,6 +45,7 @@ export interface IntegrationStatus {
   service: string;
   status: 'OK' | 'ISSUE' | 'WARN';
   last_ok_at: string;
+  error_message?: string;
 }
 
 export interface DashboardState {
